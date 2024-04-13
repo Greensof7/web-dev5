@@ -1,0 +1,43 @@
+/* tag selector for css
+denoted by html tag itself  */
+/* h1{
+    color:rgb(11, 7, 7);
+    background-color: rgb(245, 252, 127);
+} */
+
+body{
+    background-color: rgb(211, 211, 211);
+}
+
+/* universal selector  */
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* *{
+    background-color: rgb(172, 224, 175);
+}
+body{
+    background-color: cornflowerblue;
+}
+ */
+/* class selector for css
+denoted by "." symbol */
+.class1{
+    color: black;
+    background-color: rgb(219, 158, 219);
+}
+
+/* tag selector for css
+denoted by "#" symbol */
+#id{
+    color:green;
+    background-color:yellow;
+}
+/* combination selectors */
+div,p,li,.class1,#id{
+    background-color: beige;
+}

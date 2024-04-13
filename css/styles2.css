@@ -1,0 +1,123 @@
+section{
+    border: 1px dashed violet;
+    padding: 10px;
+    /* border-top-color:  green; 
+    border-top-color:green;
+    border-bottom-color:rgb(185, 219, 31);
+    border-left-color:rgb(23, 67, 191);
+    border-right-color:rgb(128, 15, 0);
+    border-top-width: 2px;
+    border-top-style: groove; */
+}
+
+/* css combinators */
+
+/* descendant selector (white space) selects all <p> elements inside section element*/
+
+section p{
+    background-color: rgb(111, 57, 105);
+}
+
+/* child selector */
+
+div > p{
+    background-color:brown;
+}
+
+ /* immediate adjacent sibling selector */
+/* section + div{
+    border: 3px dashed black;
+} */ 
+
+/* general  sibling selector  */
+section ~div{
+    border: 2px dashed greenyellow;
+}
+
+/* Pseudo-class selectors (select elements based on a certain state) */
+
+ul li a:hover{
+    background-color: violet;
+    color:black;
+}
+
+table, tr,td,th{
+    border: 2px dashed black;
+}
+
+/* table tr:nth-child(odd){
+    background-color: grey;
+}
+table tr:nth-child(2n+1){
+    background-color: grey;
+}
+table tr:nth-child(2n){
+    background-color: grey;
+} 
+table tr:nth-child(even){
+    background-color: grey;
+}*/
+
+/* Pseudo-element selectors (selection based on style part of the element) */
+section p::first-letter{
+    color: orangered;
+    font-size: 30px;
+}
+div p::first-line{
+    text-transform: uppercase;
+}
+
+/* Attribute  selectors */
+
+ul li a[title]{
+    color: greenyellow;
+}
+ul li a[title="test2"]{
+    color:orange;
+}
+
+ul li a[title*="example"]{
+    color: red;
+}
+
+ul li a[title$=".org"]{
+    color: palevioletred;
+}
+ul li a[title~="org"]{
+    color: blue;
+}
+
+/* table tr td[title]{
+    background-color: yellow;
+} */
+
+table tr td[title="test"]{
+    background-color: yellow;
+}
+
+#section1{
+    border: 5px solid blue;
+    outline: 10px solid green;
+    margin: 50px;
+}
+/* ways to mention the color in css
+------------------------------------------
+1.  name of the color - always use this with caution as browser supoort needs to be tested 
+2. 6 digit alphanumeric  hex code -unique 6 digit alphanumeric identified by the browser community for a color followed by #  e.g. (RR,GG,BB) - #ff00cc   
+3. 3 digit hex value - (R G B )  - #f0c
+4. RGB value directly - intensity of the colors is between 0 and 255 
+    e.g rgb(255, 99, 71)
+5. HSL - Hue is a degree on the color wheel 0 to 360,saturation - how much % of the color value your want , lightnesss - how much light you want to add to your color
+e.g. hsl(0, 100%, 50%)
+6.HSLA  -hsla(hue, saturation, lightness, alpha)
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+7.  hwb  hue, whiteness, and blackness. (1.5708rad 20% 10% / 0.7);
+-------------------------------------------
+*/
+
+table{
+    width: 100%
+    /* width:10vw */
+}
+
+

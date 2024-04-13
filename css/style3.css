@@ -1,0 +1,61 @@
+section h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+/* section > p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+} */
+
+/* section:last-child > p{
+    font-family: 'Courier New', Courier, monospace;
+    color:red;
+    font-size:30px;
+} */
+
+/* section:last-child{
+    border: 1px solid red;
+} */
+section{
+    border:1px solid grey;
+    border-radius: 5px;
+    padding:10px;
+    margin:10px;
+    width:250px;
+}
+
+.section3 > p:first-child{
+    font-family: 'Courier New', Courier, monospace;
+    color:blue;
+    font-size:30px;
+    font-weight: bold;
+    font-style: italic;   
+}
+
+* .section3{ 
+    position:absolute;
+    top: 200px;
+    left: 300px;
+}
+/* .section3{
+    position:relative;
+    top: 200px;
+    left: 300px;
+} */
+
+#para1{
+
+    border:1px solid red;
+  }
+  *{
+      margin-top:0px;
+  }
+  
+  #para2{
+      border:1px dashed green;
+  }
+  
+  #para3{
+      border: 1px dotted blue;
+  }
